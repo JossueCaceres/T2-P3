@@ -1,6 +1,6 @@
 # Tensor++
 
-Tarea de Programacion III hecha en C++.
+CACERES MOLINA JOSSUE GUILLERMO 202410768.
 
 La clase `Tensor` permite crear tensores de 1, 2 y 3 dimensiones. Tambien tiene operaciones como suma, resta, multiplicacion, `view`, `unsqueeze`, `concat`, `dot` y `matmul`.
 
