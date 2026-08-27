@@ -1,30 +1,35 @@
 # Tensor++
 
-CACERES MOLINA JOSSUE GUILLERMO 202410768.
+**Alumno:** Caceres Molina Jossue Guillermo  
+**Codigo:** 202410768
 
-La clase `Tensor` permite crear tensores de 1, 2 y 3 dimensiones. Tambien tiene operaciones como suma, resta, multiplicacion, `view`, `unsqueeze`, `concat`, `dot` y `matmul`.
+## Descripcion
 
-El programa de `main.cpp` prueba la red neuronal que se pide en la tarea.
+Este proyecto contiene una clase `Tensor` hecha en C++. La clase trabaja con tensores de una, dos y tres dimensiones usando memoria dinamica.
 
-En CLion se debe ejecutar el objetivo `TensorPlusPlus`. El objetivo `TensorTests` sirve para correr las pruebas por separado.
+Se implementaron las siguientes funciones:
 
-## Compilar
+- Creacion de tensores con `zeros`, `ones`, `random` y `arange`.
+- Suma, resta y multiplicacion de tensores.
+- Multiplicacion por un numero.
+- Cambio de dimensiones con `view` y `unsqueeze`.
+- Union de tensores con `concat`.
+- Producto punto con `dot`.
+- Multiplicacion de matrices con `matmul`.
+- Funciones de activacion ReLU y Sigmoid.
+- Constructor y operador de copia y movimiento.
 
-```bash
-g++ -std=c++17 Tensor.cpp main.cpp -o programa
-./programa
-```
+## Red neuronal
 
-## Probar
+El archivo `main.cpp` contiene el ejemplo solicitado en la tarea. Primero se crea un tensor de tamaño `1000 x 20 x 20`. Luego se cambia su forma y se realizan las multiplicaciones, sumas y funciones de activacion de la red neuronal.
 
-```bash
-g++ -std=c++17 Tensor.cpp tests.cpp -o pruebas
-./pruebas
-```
+El programa muestra la forma y la cantidad de elementos del tensor en cada paso.
 
-Archivos:
 
-- `Tensor.h`: declaracion de la clase.
-- `Tensor.cpp`: funciones de la clase.
-- `main.cpp`: ejemplo de la red neuronal.
-- `tests.cpp`: algunas pruebas.
+## Archivos del proyecto
+
+- `Tensor.h`: contiene la declaracion de la clase `Tensor`.
+- `Tensor.cpp`: contiene la implementacion de sus funciones.
+- `main.cpp`: contiene la red neuronal solicitada.
+- `tests.cpp`: contiene pruebas de las operaciones principales.
+- `CMakeLists.txt`: contiene la configuracion usada por CLion.
